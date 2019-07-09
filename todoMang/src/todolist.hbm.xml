@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.boris.todoMang.model.User" table="USERS">
+		<id name="id" type="int" column="ID">
+			<generator class="increment" />
+		</id>
+		<property name="name">
+			<column name="NAME" />
+		</property>
+		<property name="email">
+			<column name="EMAIL" />
+		</property>
+		<property name="password">
+			<column name="PASSWORD" />
+		</property>
+	</class>
+	<class name="com.boris.todoMang.model.Item" table="TASK">
+		<id name="id" type="int" column="ID">
+			<generator class="increment" />
+		</id>
+		<property name="email">
+			<column name="EMAIL" />
+		</property>
+		<property name="task">
+			<column name="TASK" />
+		</property>
+
+	</class>
+</hibernate-mapping>
